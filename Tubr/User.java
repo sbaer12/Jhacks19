@@ -1,6 +1,6 @@
 import java.util.*;
 
-static class User {
+ class User {
 
     private String name;
     private String email;
@@ -24,7 +24,7 @@ static class User {
     constructor taking in values for all feilds.
      */
     public User (String nameIn, String emailIn, String phoneIn, ArrayList<String> classesIn,
-                 Float rating) {
+                 Float ratingIn) {
         name = nameIn;
         email = emailIn;
         phone = phoneIn;
