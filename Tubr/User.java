@@ -1,6 +1,6 @@
 import java.util.*;
 
-abstract class User {
+static class User {
 
     private String name;
     private String email;
@@ -9,7 +9,8 @@ abstract class User {
     private float rating;
 
     /*
-    sets all fields as blank until pulled from the sql database or added by user
+    default constructor - sets all fields as blank until pulled from the sql database
+    or added by user
      */
     public User() {
         name = "";
@@ -17,6 +18,18 @@ abstract class User {
         phone = "";
         classes = new ArrayList<String>();
         rating = 0;
+    }
+
+    /*
+    constructor taking in values for all feilds.
+     */
+    public User (String nameIn, String emailIn, String phoneIn, ArrayList<String> classesIn,
+                 Float rating) {
+        name = nameIn;
+        email = emailIn;
+        phone = phoneIn;
+        classes = classesIn;
+        rating = ratingIn;
     }
 
     /*
